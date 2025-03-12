@@ -5,18 +5,19 @@ import { useState } from 'react';
 
 function App() {
   const [formState, setFormState] = useState("register"); 
-   const handleForm = (e) => {
-    const btnName = e.target.value
-    setFormState(btnName)
-    console.log(formState)
-  }
+  const handleForm = (e) => {
+    const btnName = e.target.value;
+    setFormState(btnName);
+    console.log(formState);
+  };
+
   return (
-    <div>
-      <button value="register"  onClick={handleForm}>REGISTER</button>
-      <button onClick={handleForm} >LOGIN</button>
-      { formState === "register" ? <FormComponent/> : <LogInComponent/> }
-      
-                  
+    <div className="app-container">
+      <div className="button-container">
+        <button value="register" className="form-toggle-button" onClick={handleForm}>REGISTER</button>
+        <button value="login" className="form-toggle-button" onClick={handleForm}>LOGIN</button>
+      </div>
+      {formState === "register" ? <FormComponent /> : <LogInComponent />}
     </div>
   );
 }
