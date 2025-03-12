@@ -1,6 +1,5 @@
 import React from 'react';
 import './formComponent.css';
-
 const FormComponent = () => {
     return (
         <div className="form-container">
