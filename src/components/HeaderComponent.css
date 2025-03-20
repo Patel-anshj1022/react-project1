@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Flamenco&display=swap');
+header a {
+    text-decoration: none ;
+    padding: 24px;
+    margin: 12px;
+}
+header, .nav-links{ 
+    display: flex;
+    flex-direction: row;
+    color: azure;
+    background-color: #333333;
+    font-family: 'FLREGULAR', sans-serif;
+    display: relative;
+    justify-content: center;
+}
+
+
+header, .nav-links:hover{
+    color: #ff1e00;
+}
